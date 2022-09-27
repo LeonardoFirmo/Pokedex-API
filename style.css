@@ -63,7 +63,7 @@ main h1{
 
 .input_search{
     color: grey;
-    width:350px;
+    width:90%;
     text-align: center;
     margin-top: 40vh;
     font-size: 20px;
@@ -104,67 +104,88 @@ main h1{
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
-
+@media (max-width:1100px) {
+}
 
 @media (max-width:800px) {
     .input_search{
-        width:300px;
+        width:280px;
     }
     .buttons{
-        position: absolute;
-        display: flex;
-        top: 80vh;
-        width: 28vw;
-        justify-content: space-around;
-        
+        width: 40vw; 
     
     }
     .btn-prev{
-        width:12vw;
+        width:120px;
         padding:3% 0;
-        border: 2px solid rgb(7, 5, 5) ;
-        background-color: #333;
-        color: white;
-        box-shadow: -2px 3px 0 #222,-4px 5px  #000;
+       
     }
     .btn-next{
-        width: 12vw;
+        width:120px;
         padding:3% 0;
-        border: 2px solid rgb(7, 5, 5) ;
-        background-color: #333;
-        color: white;
-        box-shadow: -2px 3px 0 #222,-4px 5px  #000;
+      
     }
 }
 
+@media (max-width:650px) {
+    .btn-prev{
+        width:25vw;
+        padding:3% 0;
+       margin-right: 2vw;
+    }
+    .btn-next{
+        width:25vw;
+        padding:3% 0;
+      
+    }
+}
 @media (max-width:400px) {
+   
+    
+    .pokemon_number{
+        font-size: 0.7rem;
+        color: grey;
+        
+    
+    }
+    .pokemon_name{
+        font-size: 0.6rem;
+        margin-left: 1vw;
+    }
     .input_search{
         width:60vw;
         font-size: 13px;
     }
     .buttons{
-        position: absolute;
-        display: flex;
-        top: 80vh;
         width: 65vw;
-        justify-content: space-around;
-        
-    
     }
     .btn-prev{
         width:30vw;
         padding:3% 0;
-        border: 2px solid rgb(7, 5, 5) ;
-        background-color: #333;
-        color: white;
-        box-shadow: -2px 3px 0 #222,-4px 5px  #000;
     }
     .btn-next{
         width: 30vw;
         padding:3% 0;
-        border: 2px solid rgb(7, 5, 5) ;
-        background-color: #333;
-        color: white;
-        box-shadow: -2px 3px 0 #222,-4px 5px  #000;
+    }
+}
+
+
+@media (max-height:500px) {
+    .input_search{
+        width:45vw;
+        font-size: 10px;
+    }
+    .buttons{
+        width: 45vw;
+    }
+    .btn-prev{
+        font-size: 10px;
+        width:15vw;
+        padding:3% 0;
+    }
+    .btn-next{
+        font-size: 10px;
+        width: 15vw;
+        padding:3% 0;
     }
 }

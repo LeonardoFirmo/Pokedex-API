@@ -18,7 +18,7 @@ function mudaPokemon(event){
         let changePokemon = ++numberPokemon.innerHTML
         getDados(changePokemon)
     }
-    
+   
 }
 
 
@@ -28,6 +28,8 @@ const getPokemonUser = pokemonEscolha.addEventListener('submit',event =>{
     let currentPokemon = pokemon.toLowerCase()
 
     getDados(currentPokemon)
+
+    pokemonEscolha.reset()
 
 })
 
@@ -45,6 +47,7 @@ async function getDados (pokemonAtual){
         dadosPokemon(numberPoke,namePoke,gifPokemon,imgPoke)
         
     }).catch( (error) =>{
+        numberPokemon.innerHTML=''
         paragraphPokemon.innerHTML= `Não existe`
         console.log('Houve um erro:' + error);
     })
