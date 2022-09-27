@@ -25,12 +25,10 @@ function mudaPokemon(event){
 const getPokemonUser = pokemonEscolha.addEventListener('submit',event =>{
     event.preventDefault()
     const pokemon = event.target.input.value
-    let currentPokemon = pokemon
-    
+    let currentPokemon = pokemon.toLowerCase()
 
     getDados(currentPokemon)
 
-    
 })
 
 
