@@ -8,6 +8,10 @@
     font-size: 20px;
 }
 
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
 
 body{
  background: linear-gradient(to bottom, #6ab7f5,#fff);
@@ -104,6 +108,33 @@ main h1{
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
+
+
+
+/* ALTURA MENOR QUER 500 */
+@media (max-height:500px) {
+    
+
+    .input_search{
+        width:45vw;
+        font-size: 10px;
+    }
+    .buttons{
+        width: 45vw;
+    }
+    .btn-prev{
+        font-size: 10px;
+        width:15vw;
+        padding:3% 0;
+    }
+    .btn-next{
+        font-size: 10px;
+        width: 15vw;
+        padding:3% 0;
+    }
+}
+
+/* Largura menor */
 @media (max-width:1100px) {
 }
 
@@ -159,33 +190,19 @@ main h1{
     .buttons{
         width: 65vw;
     }
+    main{
+        width: 350px;
+    }
     .btn-prev{
+        font-size: 12px;
         width:30vw;
         padding:3% 0;
     }
     .btn-next{
+        font-size: 12px;
         width: 30vw;
         padding:3% 0;
     }
 }
 
 
-@media (max-height:500px) {
-    .input_search{
-        width:45vw;
-        font-size: 10px;
-    }
-    .buttons{
-        width: 45vw;
-    }
-    .btn-prev{
-        font-size: 10px;
-        width:15vw;
-        padding:3% 0;
-    }
-    .btn-next{
-        font-size: 10px;
-        width: 15vw;
-        padding:3% 0;
-    }
-}
